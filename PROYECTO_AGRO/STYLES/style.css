@@ -1,0 +1,47 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Estlos Visuales (Shadows, radius)
+    5. Miscelaneos / Otros
+*/
+
+:root {
+    --color-0: #FAFAFA;
+    --color-1: #EFEEEE;
+    --color-2: #BCBABA;
+    --color-3: #DAFDBA;
+    --color-4: #9AEBA3;
+    --color-5: #45C4B0;
+    --color-6: #13678A;
+    --color-7: #012030;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    ;
+}
+
+body{
+    background-color: var(--color-0);
+}
+
+header{
+    background-color: var(--color-6);
+    height: 200px;
+}
+
+article{
+    background-color: var(--color-2);
+}
+footer{
+    background-color: var(--color-6);
+}
