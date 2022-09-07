@@ -10,11 +10,12 @@
     --color-0: #FAFAFA;
     --color-1: #EFEEEE;
     --color-2: #BCBABA;
-    --color-3: #DAFDBA;
-    --color-4: #9AEBA3;
-    --color-5: #45C4B0;
-    --color-6: #13678A;
-    --color-7: #012030;
+    --color-3: #80C7F2;
+    --color-4: #79BAF2;
+    --color-5: #D9AB73;
+    --color-6: #D9AD2B;
+    --color-7: #A2A62E;
+    --color-8: black;
     
 }
 
@@ -26,8 +27,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Inter', sans-serif;
-    ;
+    font-family:  'Courier New', Courier, monospace, sans-serif;
+    
 }
 
 body{
@@ -35,13 +36,160 @@ body{
 }
 
 header{
-    background-color: var(--color-6);
-    height: 200px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(246.24deg, #D9AD2B 4.04%, #80C7F2 106.03%, rgba(72, 71, 230, 0) 108.76%);
+    height: 150px;
 }
 
 article{
-    background-color: var(--color-2);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color-3);
+    height: 40vh;
+    width: 15vw;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    position: flex;
+    margin-left: 30%;
+    border-radius: 5px;
 }
+h1{
+    margin-left: 34%;
+    padding-top: 3%;
+    font-size: 5rem;
+    color: var(--color-1);
+    font-family: 'Pacifico', cursive;
+
+}
+h2{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    font-family: Helvetica, sans-serif;
+}
+
+a{
+    margin-left: 10%;
+    font-family: Helvetica, sans-serif;
+}
+#indexBox{
+    background-color: var(--color-1);
+    border:1px solid  var(--color-4);
+    height: 40vh;
+    width: 25vw;    
+    position: flex;
+    border-radius: 5px;
+    margin-left: 38%;
+}
+
+#loginBox{
+    background-color: var(--color-1);
+    border:1px solid  var(--color-4);
+    height: 70vh;
+    width: 30vw;    
+    position: flex;
+    border-radius: 5px;
+    margin-left: 35%;
+}
+
+label{
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-8);
+}
+#artProd{
+    background-color: var(--color-1);
+    border:1px solid  var(--color-4);
+    width: 40vw;
+    height: 110vh;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+#navProd{
+    background-color: var(--color-1);
+    border:1px solid  var(--color-4);
+    height: 77vh;
+    width: 100vw;;
+    position: flex;
+    border-radius: 5px;
+}
+
+#navEmp{
+    background-color: var(--color-1);
+    border:1px solid  var(--color-4);
+    height: 95vh;
+    width: 40vw;
+    position: flex;
+    border-radius: 5px;
+}
+
+
+.controls{
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 10%;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-3);
+}
+
+
+
+.controls-description{
+    width: 80%;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 10%;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-3);
+}
+.controls-button{
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-bottom: 16px;
+    background-color: var(--color-4);
+    border: 1px solid var(--color-3);
+
+}
+
+.accordion {
+    margin-left: 1%;
+    background-color: pink;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: left;
+    border: 1px solid var(--color-3);
+    outline: none;
+    transition: 0.4s;
+    }
+
+.active, .accordion:hover {
+    background-color: red;
+    width: 50%;
+    }
+.panel {
+    
+    margin-left: 1%;
+    height: 10vh;
+    width: 50%;
+    background-color: purple;
+    display: none;
+    overflow: hidden;
+    }  
+    
+.panel p{
+        width: 80%;
+        margin-left: 20%;
+        background-color: green;
+    }    
 footer{
-    background-color: var(--color-6);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(246.24deg, #80C7F2 4.04%, #A2A62E  106.03%, rgba(72, 71, 230, 0) 108.76%);
+
+    height: 110px;
 }

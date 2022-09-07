@@ -4,31 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PRODUCTOR</title>
     <link rel="stylesheet" href="STYLES/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>PROYECTO AGRO</h1>
+        <h1>La Plaza Campesina</h1>
     </header>
     <nav>
 
     </nav>
-    <article>
+    <article id="artProd">
         <nav>
             <h2>PRODUCTOR</h2>
-            <input type="text" name="PRODUCTO" id="">
-            <input type="text" name="DESCRIPCION DEL PRODUCTO" id="">
-            <input type="text" name="PRECIO" id="">
-            <input type="button" value="CREAR">
-            <input type="button" value="MODIFICAR">
-            <input type="button" value="BORRAR">
-            <input type="button" value="BUSCAR">
-            <input type="button" value="ADJUNTAR FOTO">
+            <input class="controls" type="text" placeholder="PRODUCTO" name="PRODUCTO" id="">
+            <input class="controls-description" type="text" placeholder="DESCRIPCION DEL PRODUCTO"name="DESCRIPCION DEL PRODUCTO" id="">
+            <input class="controls" type="text" placeholder="PRECIO COP"name="PRECIO" id="">
+            <input class="controls-button" type="button" value="CREAR">
+            <input class="controls-button" type="button" value="MODIFICAR">
+            <input class="controls-button" type="button" value="BORRAR">
+            <input class="controls-button" type="button" value="LISTAR">
+            <input class="controls-button" type="button" value="ADJUNTAR FOTO">                
+        </nav>
+        <nav>
+            
         </nav>
     </article>
+    <nav id="accordionAside">
+        <button class="accordion">Producto 1</button>
+            <div class="panel">
+            <p>Descripcion del producto 1</p>
+            </div>
+
+            <button class="accordion">Producto 2</button>
+            <div class="panel">
+            <p>Descripcion del producto 2</p>
+            </div>
+
+            <button class="accordion">Producto 3</button>
+            <div class="panel">
+            <p>Descripcion del producto 3</p>
+            </div>
+    </nav>
     <footer>
         <p>2022 Mision tic</p>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+    </script>
 </body>
 </html>

@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="STYLES/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>PROYECTO AGRO</h1>
+        <h1>La Plaza Campesina</h1>
     </header>
     <nav>
 
     </nav>
-    <article>
+    <article id="loginBox">
         <nav>
-            <h2>Iniciar sesión</h2>
-            <input type="text" name="NOMBRES Y APELLIDOS/ RAZÓN SOCIAL" id="">
-            <input type="text" name="IDENTIFICACIÓN/NIT" id="">
-            <input type="tel" name="CIUDAD/MUNICIPIO" id="">
-            <input type="text" name="DIRECCION" id="">
-            <input type="text" name="EMAIL" id="">
-            <input type="checkbox" name="EMPRENDEDOR" id="">
-            <input type="checkbox" name="PRODUCTOR" id="">
-            <input type="button" value="iniciar">
+            <h2>Registro</h2>
+            <input class="controls" placeholder="NOMBRES Y APELLIDOS / RAZON SOCIAL" type="text" name="NOMBRES Y APELLIDOS/ RAZÓN SOCIAL" >
+            <input class="controls" placeholder="IDENTIFICACION/NIT"type="text" name="IDENTIFICACIÓN/NIT" >
+            <input class="controls" placeholder="CIUDAD/MUNICIPIO"type="tel" name="CIUDAD/MUNICIPIO" >
+            <input class="controls" placeholder="DIRECCION"type="text" name="DIRECCION" >
+            <input class="controls" placeholder="CORREO ELECTRONICO"type="text" name="EMAIL" >
+            <br>
+            <label><input type="checkbox" name="EMPRENDEDOR" >  Emprendedor</label>
+        
+            <label><input type="checkbox" name="PRODUCTOR" >  Productor</label>
+            <br>    
+            <input class="controls-button" type="button" value="iniciar">
         </nav>
     </article>
     <footer>
